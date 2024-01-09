@@ -23,3 +23,9 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+INCLUDEPATH += E:\\av0\\sky\\ffmpeglib\\include
+
+LIBS += -LE:\\av0\\sky\\ffmpeglib\\lib -lavcodec -lavdevice -lavfilter -lavformat -lavutil -lswresample -lswscale
+
+
+#  -lavcodec -lavdevice -lavfilter -lavformat -lavutil -lswresample -lswscale
